@@ -1,0 +1,9 @@
+leftover_task:
+  description: |
+    Based on the meal plan for '{meal_name}' serving {servings} people:
+    1. Identify common ingredients that might create leftovers
+    2. Suggest 2-3 creative recipes that could use potential leftover ingredients
+    3. Provide storage tips to maximize ingredient freshness
+    4. Recommend portion adjustments if needed to minimize waste
+    Consider dietary restrictions: {dietary_restrictions} and cooking skill: {cooking_skill}.
+  expected_output: "A comprehensive leftover management guide with creative recipes for leftover ingredients, storage tips, and waste reduction strategies."
