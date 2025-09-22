@@ -140,7 +140,7 @@ if __name__ == '__main__':
     if not os.getenv('GEMINI_API_KEY'):
         logger.warning("GEMINI_API_KEY not set - AI functionality may not work")
     
-    port = int(os.environ.get('PORT', 5001))
+    port = int(os.environ.get('PORT', 5000))
     debug = os.environ.get('FLASK_ENV') == 'development'
     
     logger.info(f"Starting Alex Meal Planner API on port {port}")
