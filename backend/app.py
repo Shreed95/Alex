@@ -48,7 +48,7 @@ def generate_meal_plan():
             return jsonify({"error": "SERPER_API_KEY not configured"}), 500
         
         if not os.getenv('GEMINI_API_KEY'):
-            return jsonify({"error": "ANTHROPIC_API_KEY not configured"}), 500
+            return jsonify({"error": "GEMINI_API_KEY not configured"}), 500
         
         logger.info(f"Generating meal plan for: {meal_request.meal_name}")
         
@@ -137,8 +137,8 @@ if __name__ == '__main__':
     if not os.getenv('SERPER_API_KEY'):
         logger.warning("SERPER_API_KEY not set - search functionality may not work")
     
-    if not os.getenv('ANTHROPIC_API_KEY'):
-        logger.warning("ANTHROPIC_API_KEY not set - AI functionality may not work")
+    if not os.getenv('GEMINI_API_KEY'):
+        logger.warning("GEMINI_API_KEY not set - AI functionality may not work")
     
     port = int(os.environ.get('PORT', 5001))
     debug = os.environ.get('FLASK_ENV') == 'development'
