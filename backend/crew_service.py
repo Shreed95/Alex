@@ -8,7 +8,7 @@ class AlexCrewService:
     def __init__(self):
         # Initialize LLM
         self.llm = LLM(
-            model="gemini/gemini-2.0-flash",
+            model="gemini/gemini-1.5-flash",
             temperature=0.7
         )
         
